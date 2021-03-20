@@ -1,13 +1,82 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+* {
+    box-sizing: border-box;
+}
+.App {
+    text-align:center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.header {
+      background-color: #282c34;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
 
-*/
+.header h2 {
+    margin: 0;
+}
+
+.spinner {
+  height: 80px;
+  margin: auto;
+}
+
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+
+.search > input[type="text"]{
+  width: 40%;
+  min-width: 170px;
+}
+
+.intro {
+  font-size: large;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.character {
+  padding: 5px 25px 10px 25px;
+  max-width: 25%;
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
