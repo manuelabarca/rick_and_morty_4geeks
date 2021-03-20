@@ -25,7 +25,7 @@ const Home = () => {
 	const search = value => {
 		setLoading(true);
 		setErrorMessage(null);
-		fetch(`https://rickandmortyapi.com/api/character/?name=${value}`)
+		fetch(`${RM_API_URL}/?name=${value}`)
 			.then(response => response.json())
 			.then(jsonResponse => {
 				if (jsonResponse.info.count > 0) {
